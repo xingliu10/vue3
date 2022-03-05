@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+        script标签一旦用于引入外部文件，就不能再编写代码了
+        可以再编写一个script标签
+     -->
+    <!-- 可以将js代码编写到外部js文件中，然后通过过script标签引入 -->
+    <script src="./script.js"></script>
+
+    <!-- 可以将js代码编写到script标签 -->
+    <script>
+
+        alert('eee')
+
+        /*
+            1.js中严格区分大小写
+            2.js中每一条语句以分号 ; 结尾
+            3.js中会忽略多个空格和换行，所以我们可以用空格和换行对代码进行格式化
+        */
+    </script>
+</head>
+<body>
+
+    <!-- 
+        可以将js代码编写到标签的onclick属性中
+        当我们点击按钮时,js代码才会执行
+     -->
+    <buttom onclick="alert('eee')">提交</buttom>
+
+    <!-- 
+        可以将js代码写在超链接的href属性中，这样当点击超链接时，会执行js代码
+     -->
+    <a href="javascript:alert('eee');">提交</a>
+    
+</body>
+</html>
