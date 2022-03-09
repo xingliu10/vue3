@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        /*
+            JS中为我们提供了三种逻辑运算符
+                ！非
+                    -！可以用来对一个值进行非运算
+                    -非运算就是指对一个布尔值进行取反操作
+                        true 变 false
+                        false 变 true
+                    -对一个值进行两次取反，值不会发生变化
+                    -如果对非布尔值进行取反，则会将其转换为布尔值，然后再取反
+                        我们可以利用取反，将一个其他类型数据转换为布尔值
+                        可以为任意一个数据类型取反两次，来将其转换为需要的布尔值
+
+                && 与
+                    -&&可以对符号两侧的值进行与运算并返回结果
+                    -两个值中只要有一个值为false，则返回false
+                        只有两个值都为true时返回true
+                    -JS中的"与"属于短路的与
+                        如果第一个值为false，则不会看第二个值
+
+                || 或
+                    -||可以对符号两侧的值进行或运算并返回会结果
+                    -两个值中只要有一个值为true，则返回true
+                        只有两个值都为false时返回false
+                    -JS中的"或"属于短路的与
+                        如果第一个值为true，则不会看第二个值
+        */
+//！非
+       var a = true;
+
+       a = !a;
+
+       console.log("a = " +a)
+
+       var b = 10;
+
+       b = !b;
+
+       console.log("b = " +b)
+       console.log(typeof b)
+
+//&&与
+        var result = true && true;
+
+        // 如果两个值都是true则返回true
+        console.log("result = " +result);
+
+        var result = true && false;
+        var result = false && true;
+
+        //只有一个false则返回false
+        console.log("result = " +result);
+
+        //第一个值为true会检查第二个值
+        // true && alert("看我出不出来！")
+
+        // 第一个值为false不会检查第二个值
+        // false && alert("看我出不出来！")
+
+//||或
+        //两个都是false则返回false
+        result = false || false;
+
+        // 只要有一个true，则返回true
+        result = true || false;
+        result = false || true;
+        result = true || true;
+
+        console.log("result = " + result);
+
+        //第一个值为false会检查第二个值
+        // true || alert("看我出不出来！")
+
+        // 第一个值为true不会检查第二个值
+        // false || alert("看我出不出来！")
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
