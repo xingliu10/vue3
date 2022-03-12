@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        /*
+            通过关系运算符可以比较两个值之间的大小关系
+                如果关系成立它会返回true，如果关系不成立则返回false
+
+            > 大于号
+                -判断符号左侧的值是否大于右侧的
+                -如果关系成立，返回true，如果关系不成立，则返回false
+
+            >= 大于等于
+                -判断符号左侧是否大于或等于右侧的值
+
+            < 小于号
+            <= 小于等于号
+
+            非数值的情况
+                -对于非数值进行比较时，会转换为数字再进行比较
+                -如果符号两侧的值都是字符串时，不会将其转换为数字进行比较，
+                    而会分别比较字符串中字符的Unicode编码
+        */
+
+//大于号
+        var result =  5 > 10;//false
+
+        result = 5 > 4;//true
+
+//大于等于号
+        result = 5 >= 5;//true
+
+        result = 5 >= 4;//true
+
+//小于号
+        result = 5 < 4;//false
+
+//小于等于号
+        result = 4 <= 4;//true
+
+        console.log("result =" +result);
+
+//非数值的情况
+        console.log(1 > true);//false
+        console.log(1 >= true);//true
+        console.log(1 >= "0");//true
+        console.log(10 >= null);//true
+    //任何值和NaN做比较都是false
+        console.log(10 >= NaN);//false
+        console.log(true > false);//true
+        console.log("11" < "5");//true
+        console.log("1" < "5");//true
+
+    //比较两个字符串时比较的是字符串的字符编码
+        console.log("a" < "b");//true
+        console.log("b" < "a");//false
+    //比较字符编码时是一位一位进行比较
+        console.log("abc" < "b");//true
+    //如果两位一样则比较下一位，所以借用它来对英文进行排序
+        console.log("bbc" < "b");//true
+        
+        //比较中文没有意义
+        console.log("你" > "我");//false
+        console.log("戒" > "我");//true
+
+    //如果比较两个字符串型的数字，可能得到不可预期的结果
+        console.log("11" > "5");//false
+    //在比较两个字符串型的数字是，一定要 “转型”
+        console.log("115423435" > +"5");//true
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
