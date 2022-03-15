@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        /*
+            , (逗号) 运算符
+                使用,可以分割多个语句，一般可以在声明多个变量时使用,
+
+            在JS中有一个运算符优先级的表，
+                在表中越靠上优先级越高，优先级高优先计算
+                如果优先级一样，则从左往右计算
+            遇到不知道优先级的可以使用 () 来改变优先级
+        */
+        //var a;
+        //var b;
+        //var c;
+
+        //使用,运算符同时声明多个变量
+        // var a, b, c;
+
+        //声明多个变量，同时赋值
+        var a = 1, b = 2, c = 3;
+        
+        alert(b);
+        
+        // var result = 1 + 2 * 3;
+
+        /*
+            如果||的优先级高，或者两个一样高，则应该返回3
+            如果&&的优先级高，则应该返回1
+        */
+
+        var result = (1 || 2) && 3;
+
+        console.log(result);
+
+    </script>
+    <style>
+        body{
+            width: 1000%;
+            height: 1000%;
+            /* background-color: #bfa; */
+            background-image: url(./img/微信图片_20220315160443.jpg);
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
