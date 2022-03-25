@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        /*
+            假如投资的年利率为5%，求从1000块增长到5000块，需要多少年
+
+            1000 1000*1.05
+            1050 1050*1.05
+        */
+
+        //定义当前钱数
+        var money = 1000;
+
+        //定义一个计数器
+        var count = 0;
+
+        while(money < 5000){
+            money *= 1.05;
+
+            //时count自增
+            count++;
+        }
+
+        console.log(money);
+        console.log('一共需要' +count +'年');
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
