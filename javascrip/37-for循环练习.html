@@ -8,8 +8,29 @@
     <script>
 
         /*
-            打印1-100之间
+            打印1-100之间所有7的倍数的个数总和
         */
+
+        //定义一个计数器
+        var count = 0;
+
+
+        for(var i = 1 ,sum = 0 ; i <= 100; i++){
+            // document.write(i);
+            // console.log(i);
+            // alert(i);
+
+            if(i%7 == 0){
+                sum = sum+i
+                // console.log("7的倍数之和=" +sum);
+                //使计数器自增1
+                count++;
+            }
+
+        }
+        console.log("7的倍数之和=" +sum);
+        console.log("计算次数" +count);
+
 
     </script>
 </head>
