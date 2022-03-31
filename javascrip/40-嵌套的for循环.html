@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        /*
+            通过程序，在页面输入以下的图形：
+                *
+                **
+                ***
+                ****
+                *****
+
+                *****
+                *****
+                *****
+                *****
+                *****
+        */
+
+        //向body输出一个内容
+        // document.write("*****<br />");
+        // document.write("*****<br />");
+        // document.write("*****<br />");
+        // document.write("*****<br />");
+        // document.write("*****<br />");
+
+        //通过for循环输出图形
+        //可以通过for循环控制图形高度
+        for(var i = 0; i < 5; i++){
+            // document.write("*****<br />");
+
+            //在循环内部再创建一个循环，用来控制宽度
+            //目前外部的for循环执行1次，内部就会执行5次
+            for(var a = 0; a < 5; a++){
+                document.write("*&nbsp;&nbsp;&nbsp;");
+            }
+            for(var b = 0; b < i+1; b++){
+                document.write("*&nbsp;&nbsp;&nbsp;");
+            }
+            document.write("<br />");
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
