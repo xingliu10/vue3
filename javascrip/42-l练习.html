@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        /*
+            2.打印1-100之间所有的质数
+        */
+       //创建一个布尔值用来保存结果，默认a是质数
+       var flag = true;
+
+        //打印2-100之间所有的数
+       for(var a = 2;a <= 100; a++){
+            // document.write(a);
+            //判断a是否是质数
+            //获取2-100之间所有的数
+            for(var b = 2;b < a;b++){
+                // document.write(b);
+
+                //判断a是否被b整除
+                if(a%b == 0){
+                    //如果进入判断则证明a不是质数,修改flag值为false
+                    flag = false;
+
+                }
+            }
+
+            //如果是质数则打印a的值
+            if(flag){
+                document.write(a);
+            }
+            document.write("<br />");
+       }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
