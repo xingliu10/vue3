@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        /*
+            break关键字可以用来退出switch或循环语句
+                不能在if循环使用break和continue
+                break关键字，会立即终止离它最近的那个循环语句
+        */
+
+//break
+
+        // for(var a = 0;a < 5;a++){
+        //     document.write(a);
+            
+        //     if(a == 2){
+        //         break;
+        //     }
+        // }
+
+        /*
+            可以为循环语句创建一个label，来标识当前的循环
+                label：循环语句
+                使用break时，可以在break后面跟着一个label，
+                这样break将会结束指定的循环，而不是最近的
+        */
+        //名字
+        // outer:
+        // for(var b = 0;b < 5;b++){
+        //     document.write("外部循环="+b);
+
+        //     for(var c = 0;c < 5;c++){
+        //         break outer;
+        //         document.write("内部循环="+c);
+        //     }
+        // }
+
+//continue
+
+            /*
+                continue关键字可以用来跳过当次循环
+                    continue也自会对最近的循环起作用
+            */
+        // for(var d = 0; d < 5; d++){
+        //     document.write(d);
+        // }
+        hello:
+        for(var d = 0; d < 5; d++){
+            for(var e = 0; e < 5; e++){
+                continue hello;
+                document.write("内层循环"+e);
+                
+            }
+            document.write("外层循环"+d);
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
